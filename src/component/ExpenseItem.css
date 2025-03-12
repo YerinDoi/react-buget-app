@@ -1,0 +1,54 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--mainWite);
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s linear;
+}
+
+.item:hover {
+  width: 100%;
+  transform: scale(1.02);
+  /* 요소가 부모 컨테이너의 너비를 유지하면서
+  scale(1.02)로 확대될 때 레이아웃이 깨지는 것을
+   방지하기 위해 필요함! */
+}
+
+.info {
+  flex: 0 0 60%;
+  display: flex; /* 기본 크기를 부모 요소의 60%로 설정 */
+  justify-content: space-between;
+  background-color: aqua;
+}
+
+.expense {
+  background-color: blueviolet;
+  margin-right: 2rem;
+}
+
+.amount {
+  font-weight: 300;
+  font-size: 1rem;
+  border-radius: 2px;
+  padding: 1px 3px;
+}
+
+.clear-btn,
+.edit-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.clear-btn {
+  color: var(--mainRed);
+}
+
+.edit-btn {
+  color: var(--mainGreen);
+}
